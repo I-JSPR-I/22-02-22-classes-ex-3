@@ -19,9 +19,11 @@ namespace _22_02_22_classes_ex_3
         private static void output(List<CD> CDLijst)
         {
             Console.WriteLine($"Er zijn {CDLijst.Count} Liedjes");
-            Console.WriteLine();
-            Console.WriteLine();
-
+            foreach (CD lied in CDLijst)
+            {
+                Console.WriteLine(lied.Titel);
+                Console.WriteLine(lied.Uitvoerder);
+            }
         }
 
         private static List<CD> Input(List<CD> CDLijst)
